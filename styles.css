@@ -1,0 +1,140 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Inicio Formulario */
+form {
+    background-color: blue;
+    border: 50px double black;
+    border-radius: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: #ecf0f1;
+    width: 50%;
+    margin:auto;
+    flex: 50%;
+}
+
+input {
+    color: white;
+    margin:auto;
+    flex: 50%;
+}
+
+textarea {
+    color: black;
+    width: 50%;
+    margin:auto;
+    flex: 100px;
+}
+/* Fin Formulario */
+
+li {
+    list-style: none;
+}
+
+.extracto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pedidos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton_contacto {
+    color: #000;
+}
+
+.boton_contacto:hover {
+    cursor: pointer;
+}
+
+.extracto img {
+    height: 500px;
+    width: 350px;
+}
+
+.galeria img {
+    height: 250px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+/* Media Querys */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #e58e26;
+    color: #ecf0f1;
+  }
+  
+  .menu li {
+    list-style: none;
+    margin: 0 1rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Cambiar diseño del menú */
+    .menu {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .menu li {
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+    /* Cambiar tamaño de imágenes */
+    .extracto img,
+    .galeria img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
